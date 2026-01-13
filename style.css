@@ -113,15 +113,28 @@ ul {
 }
 
 /* Profile photo */
-.avatar {
-  width: 130px;
-  height: 130px;
+/* Circular frame that shows more of the photo */
+.avatar-frame {
+  width: 140px;
+  height: 140px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 3px solid #9ccfe8;
+  padding: 8px;                 /* makes the photo smaller inside */
+  margin: 0 auto 12px auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
   border-radius: 999px;
   object-fit: cover;
-  border: 3px solid #9ccfe8;
-  margin: 0 auto 12px auto;
+  object-position: center 20%;  /* adjust this if you want more forehead/less, etc. */
   display: block;
 }
+
 
 /* Skill chips */
 .chip {
